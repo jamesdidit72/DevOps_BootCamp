@@ -6,4 +6,8 @@
 - Set of practices
 - Intended to reduce the time between commits
 ### devops pillars
+- Ease of Use
+- Flexibility
+- Robustness
+- Cost Effectiveness
 #### monolith architecture, one tier
