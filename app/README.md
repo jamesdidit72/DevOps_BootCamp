@@ -13,3 +13,5 @@ sudo apt-get install nginx -y
 
 # load nginx on 192.168.10.100
 ```
+- Added ```config.vm.provision :shell, path: "app/provision.sh"``` to vagrant file which allows for the vagrant up to launch bash script
+- Found here: https://www.vagrantup.com/docs/provisioning/shell

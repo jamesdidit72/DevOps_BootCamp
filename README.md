@@ -51,5 +51,6 @@
 
     # load nginx on 192.168.10.100
 ```
+- Ensure that permissions are changed using ```sudo chmod +x [filename]``` command
 #### Some of these can be seen in action in the provision.sh bash script
 ![](images/Vag_diagram.png)
