@@ -7,8 +7,11 @@ config.vm.box = "ubuntu/xenial64"
 
 # assign private ip to our VM
 config.vm.network "private_network", ip: "192.168.10.100"
+# Ensure to install hostsupdater plugin on local host before rerunning vagrant
+config.hostsupdater.aliases = ["development.local"]
+# sync folder from OS to VM
+                # "." means current location - into VM
+config.vm.synced_folder ".", "/home/vagrant/app"
 
-
-
-
+config.vm.provision :shell, path: "app/provision.sh"
 end
